@@ -18,7 +18,7 @@ int main ()
     cout << endl;
     
     cout << "What is the month?" << endl;
-    int year = 0;
+    int month = 0;
     cin >> month;
     
     cout << endl;
