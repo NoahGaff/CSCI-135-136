@@ -27,18 +27,17 @@ int main ()
     cout << endl;
     
     int daysInMonth = 0; 
-    
-    if ((month < 7) && (month % 2 == 0) || (month > 7) && (month % 2 != 0) && (month != 2)) 
-      daysInMonth = 30; 
+     
       
-    else if (month == 2)
+    if (month == 2)
     {
       if (year % 4 != 0) {daysInMonth = 28;}
       else if (year % 100 != 0) {daysInMonth = 29;}
       else if (year % 400 != 0) {daysInMonth = 28;}
       else {daysInMonth = 29;}
     }
-    
+    else if ((month < 7) && (month % 2 == 0) || (month > 7) && (month % 2 != 0)) 
+      daysInMonth = 30;
     else 
       daysInMonth = 31;
       
