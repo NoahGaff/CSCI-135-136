@@ -42,7 +42,7 @@ int main ()
     else 
       daysInMonth = 31;
       
-    cout << daysInMonth
+    cout << daysInMonth;
     
     return 0;
 }
