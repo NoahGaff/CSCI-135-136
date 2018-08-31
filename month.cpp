@@ -28,7 +28,7 @@ int main ()
     
     int daysInMonth = 0; 
     
-    if ((month > 7) && (month % 2 == 0) || (month < 7) && (month % 2 != 0) && (month != 2)) 
+    if ((month < 7) && (month % 2 == 0) || (month > 7) && (month % 2 != 0) && (month != 2)) 
       daysInMonth = 30; 
       
     else if (month == 2)
