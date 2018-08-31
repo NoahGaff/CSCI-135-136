@@ -6,6 +6,9 @@ Assignment: smaller
 tells you if its a leap year
 */
 
+// i need 
+//2 more comments? 
+
 #include <iostream>
 using namespace std;
 
@@ -30,14 +33,14 @@ int main ()
       
     else if (month == 2)
     {
-      if (year % 4 != 0) {daysInMonth = 28}
-      else if (year % 100 != 0) {daysInMonth = 29}
-      else if (year % 400 != 0) {daysInMonth = 28}
-      else {daysInMonth = 29}
+      if (year % 4 != 0) {daysInMonth = 28;}
+      else if (year % 100 != 0) {daysInMonth = 29;}
+      else if (year % 400 != 0) {daysInMonth = 28;}
+      else {daysInMonth = 29;}
     }
     
     else 
-      daysInMonth = 31
+      daysInMonth = 31;
       
     cout << daysInMonth
     
