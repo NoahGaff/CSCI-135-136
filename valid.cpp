@@ -18,7 +18,7 @@ int main ()
     cout << "give me a number inbetween 0 and 100:" << endl;
     cin >> num;
     
-    while ((num < 1) || (num > 100))
+    while ((num < 1) || (num > 99))
     {
         cout << "I'm sorry, the number you entered was not in the requested peramiters";
         cout << endl << "give me a number inbetween 0 and 100:" << endl;
