@@ -1,9 +1,12 @@
+
 //
 //  valid.cpp
 //  136
-//
-//  Created by Noah Gaffney on 9/6/18.
+//  9/6/18
+//  Created by Noah Gaffney
 //  Copyright © 2018 Noah Gaffney. All rights reserved.
+//  fun and giggles
+//
 //
 
 #include <iostream>
@@ -15,7 +18,7 @@ int main ()
     cout << "give me a number inbetween 0 and 100:" << endl;
     cin >> num;
     
-    while ((num < 0) || (num > 100))
+    while ((num < 1) || (num > 100))
     {
         cout << "I'm sorry, the number you entered was not in the requested peramiters";
         cout << endl << "give me a number inbetween 0 and 100:" << endl;
