@@ -1,9 +1,10 @@
 //
 //  valid.cpp
 //  136
-//
-//  Created by Noah Gaffney on 9/6/18.
+//  9/6/18
+//  Created by Noah Gaffney on
 //  Copyright © 2018 Noah Gaffney. All rights reserved.
+//  it's over 9000
 //
 
 #include <iostream>
@@ -26,12 +27,12 @@ int main ()
         cin >> value;
         cout << endl;
         
-        if (index < 10)
+        if (index < 10 && index > 0)
         {
             myData[index] = value;
         }
         
-} while (index < 10);
+    } while (index < 10 && index > 0);
     
     
     return 0;
