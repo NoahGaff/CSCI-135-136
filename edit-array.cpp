@@ -27,12 +27,12 @@ int main ()
         cin >> value;
         cout << endl;
         
-        if (index <= 10 && index >= 0)
+        if (index <= 9 && index >= 0)
         {
             myData[index] = value;
         }
         
-    } while (index <= 10 && index >= 0);
+    } while (index <= 9 && index >= 0);
     
     
     return 0;
