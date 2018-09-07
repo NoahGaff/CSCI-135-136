@@ -1,10 +1,11 @@
 //
 //  valid.cpp
 //  136
-//
-//  Created by Noah Gaffney on 9/6/18.
+//  9/6/18
+//  Created by Noah Gaffney on
 //  Copyright © 2018 Noah Gaffney. All rights reserved.
 //
+//  gradescope is buggy
 
 #include <iostream>
 using namespace std;
@@ -12,7 +13,7 @@ using namespace std;
 int main ()
 {
     int num1, num2;
-    cout << "give me 2 numbers and ill give you a list of the numbers inbetween" << endl;
+    cout << "give me two numbers and ill give you a list of the numbers inbetween" << endl;
     cin >> num1;
     cin >> num2;
     
