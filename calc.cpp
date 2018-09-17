@@ -19,9 +19,9 @@ int main ()
     
     cin >> num;
     
-    while (cin >> num)
+    while (cin >> oparator)
     {
-        cin >> oparator;
+        cin >> num;
         if (oparator == "+")
         {
             sum += num;
@@ -37,4 +37,3 @@ int main ()
     
     return 0;
 }
-
