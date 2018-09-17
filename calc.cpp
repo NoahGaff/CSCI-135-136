@@ -7,6 +7,7 @@
 //  it's over 9000
 //
 
+/*
 #include <iostream>
 using namespace std;
 
@@ -41,3 +42,26 @@ int main ()
     
     return 0;
 }
+*/
+
+#include <iostream>
+using namespace std;
+
+int main ()
+{
+    string input, concatonatedInput;
+    int calulatedOut;
+    
+    while (cin >> input)
+    {
+        concatonatedInput = concatonatedInput + input;
+    }
+    
+    calulatedOut = stoi(concatonatedInput);
+    
+    cout << calulatedOut;
+    
+    
+    return 0;
+}
+
