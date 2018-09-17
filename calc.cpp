@@ -26,9 +26,13 @@ int main ()
         {
             sum += num;
         }
+        else if (num < 0)
+        {
+            sum -= |num|;
+        }
         else
         {
-            sum -= num;
+            sum -= num; 
         }
     }
     
