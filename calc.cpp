@@ -6,7 +6,7 @@
 //  Copyright © 2018 Noah Gaffney. All rights reserved.
 //  it's over 9000
 // I need more comments?
-// 
+//
 
 #include <iostream>
 using namespace std;
@@ -23,17 +23,13 @@ int main ()
     while (cin >> oparator)
     {
         cin >> num;
-        if (oparator == "+")
+        if (oparator == "-")
         {
-            sum += num;
-        }
-        else if (num < 0)
-        {
-            sum -= abs(num);
+            sum -= num;
         }
         else
         {
-            sum -= num;
+            sum += num;
         }
     }
     
@@ -42,4 +38,3 @@ int main ()
     
     return 0;
 }
-
