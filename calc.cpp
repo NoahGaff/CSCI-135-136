@@ -17,7 +17,7 @@ int main ()
     
     int sum = 0;
     
-    cin >> num;
+    cin >> sum;
     
     while (cin >> oparator)
     {
