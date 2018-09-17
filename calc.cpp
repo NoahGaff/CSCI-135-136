@@ -27,7 +27,7 @@ int main ()
         {
             sum -= num;
         }
-        else
+        else if (oparator == "+")
         {
             sum += num;
         }
