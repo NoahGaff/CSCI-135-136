@@ -28,11 +28,11 @@ int main ()
         }
         else if (num < 0)
         {
-            sum -= |num|;
+            sum -= abs(num);
         }
         else
         {
-            sum -= num; 
+            sum -= num;
         }
     }
     
