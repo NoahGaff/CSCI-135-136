@@ -14,7 +14,7 @@ using namespace std;
 int main ()
 {
     int num;
-    string oparator;
+    char oparator;
     
     int sum = 0;
     
@@ -23,11 +23,11 @@ int main ()
     while (cin >> oparator)
     {
         cin >> num;
-        if (oparator == "-")
+        if (oparator == '-')
         {
             sum -= num;
         }
-        else if (oparator == "+")
+        else if (oparator == '+')
         {
             sum += num;
         }
