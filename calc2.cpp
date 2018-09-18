@@ -17,9 +17,9 @@ int main ()
     char oparator;
     
     int sum = 0;
-    cin >> sum;
     
-    do
+    
+    while (cin >> sum)
     {
         while (cin >> oparator)
         {
@@ -42,7 +42,7 @@ int main ()
         cout << sum << endl;
         sum = 0;
     
-    } while (cin >> sum);
+    }
     
     
     return 0;
