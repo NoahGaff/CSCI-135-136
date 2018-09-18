@@ -18,7 +18,7 @@ int main ()
     
     int sum = 0;
     
-    while (cin)
+    while (!cin.fail())
     {
     
         cin >> sum;
@@ -39,9 +39,9 @@ int main ()
                 break;
             }
     
-            cout << sum;
-    
         }
+        
+        cout << sum;
     }
     
     return 0;
