@@ -13,10 +13,8 @@ using namespace std;
 
 int main ()
 {
-    int num;
+    int num, sum;
     char oparator;
-    
-    int sum = 0;
     
     
     while (cin >> sum)
@@ -40,7 +38,6 @@ int main ()
         }
         
         cout << sum << endl;
-        sum = 0;
     
     }
     
