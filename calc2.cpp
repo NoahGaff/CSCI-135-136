@@ -40,7 +40,7 @@ int main ()
     
         }
         
-        cout << sum;
+        cout << sum << endl;
         sum = 0;
     
     } while (cin >> sum);
