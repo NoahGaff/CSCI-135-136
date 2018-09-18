@@ -18,8 +18,6 @@ int main ()
     
     int sum = 0;
     
-    while (cin)
-    {
     
         cin >> sum;
     
@@ -43,8 +41,7 @@ int main ()
         
         cout << sum;
         sum = 0;
-    }
+    
     
     return 0;
 }
-
