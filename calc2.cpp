@@ -18,26 +18,30 @@ int main ()
     
     int sum = 0;
     
-    cin >> sum;
-    
-    while (cin >> oparator)
+    while (cin)
     {
-        cin >> num;
-        if (oparator == '-')
-        {
-            sum -= num;
-        }
-        else if (oparator == '+')
-        {
-            sum += num;
-        }
-        else if (oparator == ';')
-        {
-            break;
-        }
     
-    cout << sum;
+        cin >> sum;
     
+        while (cin >> oparator)
+        {
+            cin >> num;
+            if (oparator == '-')
+            {
+                sum -= num;
+            }
+            else if (oparator == '+')
+            {
+                sum += num;
+            }
+            else if (oparator == ';')
+            {
+                break;
+            }
+    
+            cout << sum;
+    
+        }
     }
     
     return 0;
