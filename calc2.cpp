@@ -1,3 +1,10 @@
+//
+//  valid.cpp
+//  136
+//  9/6/18
+//  Created by Noah Gaffney on
+//  Copyright © 2018 Noah Gaffney. All rights reserved.
+//  it's over 9000
 // I need more comments?
 //
 
@@ -10,9 +17,6 @@ int main ()
     char oparator;
     
     int sum = 0;
-    
-    while (cin)
-    {
     
     cin >> sum;
     
@@ -31,7 +35,6 @@ int main ()
         {
             break;
         }
-    }
     
     cout << sum;
     
