@@ -17,10 +17,10 @@ int main ()
     char oparator;
     
     int sum = 0;
+    cin >> sum;
     
-    
-        cin >> sum;
-    
+    do
+    {
         while (cin >> oparator)
         {
             cin >> num;
@@ -41,6 +41,8 @@ int main ()
         
         cout << sum;
         sum = 0;
+    
+    } while (cin >> sum);
     
     
     return 0;
