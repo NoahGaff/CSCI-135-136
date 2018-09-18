@@ -18,11 +18,10 @@ int main ()
     
     int sum = 0;
     cin >> sum;
-    bool endLoop = false;
     
     do
     {
-        while ((cin >> oparator)&&(endLoop = false))
+        while (cin >> oparator)
         {
             cin >> num;
             if (oparator == '-')
@@ -35,7 +34,7 @@ int main ()
             }
             else if (oparator == ';')
             {
-                endLoop = true;
+                break;
             }
     
         }
