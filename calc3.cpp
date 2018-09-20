@@ -19,6 +19,7 @@ int main ()
     char oparator;
     
     cin >> num;
+    sum = num;
    
     while (cin >> oparator)
     {
