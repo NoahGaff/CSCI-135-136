@@ -22,7 +22,7 @@ int main ()
     {
         if (oparator == '^')
         {
-            cout << 25; 
+            cout << "25"; 
             sum = sum^2;
         }
         else if (oparator == '-')
