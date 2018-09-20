@@ -35,7 +35,7 @@ int main ()
         }
         if (op == '^')
         {
-            sum += pow(num,2);
+            num = pow(num,2);
         }
         if (op == ';')
         {
