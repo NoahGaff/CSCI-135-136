@@ -13,8 +13,10 @@ using namespace std;
 
 int main ()
 {
-    int num, sum = 0;
+    int num, sum;
     char oparator;
+    
+    cin >> sum; 
    
     while (cin >> oparator >> num)
     {
