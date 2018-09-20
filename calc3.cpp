@@ -5,8 +5,9 @@
 //  Created by Noah Gaffney on
 //  Copyright © 2018 Noah Gaffney. All rights reserved.
 //  it's over 9000
-// I need more comments?
-// DJ kahlid! "another one" 
+//  I need more comments?
+//  DJ kahlid! "another one" 
+//
 //
 
 #include <iostream>
