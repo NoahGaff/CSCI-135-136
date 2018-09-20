@@ -20,11 +20,11 @@ int main ()
     
     cin >> sum;
    
-    while (cin >> oparator)
+    while (cin >> oparator >> num)
     {
         if (oparator == '^')
         {
-            sum = sum^2;
+            sum = sum + num^2;
         }
         else if (oparator == '-')
         {
