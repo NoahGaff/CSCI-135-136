@@ -15,43 +15,36 @@ using namespace std;
 
 int main ()
 {
-    int num, sum = 0, squaredSum = 0;
-    char oparator;
+    int num, sum;
+    char op;
     
     cin >> num;
     sum = num;
-   
-    while (cin >> oparator)
+    
+    while (cin >> op)
     {
-        if (oparator == '^')
+        if (op == '+')
         {
-            sum = squaredSum;
-            if (squaredSum == 0)
-                sum = pow(num,2);
-        }
-        else if (oparator == '-')
-        {
-            cin >> num;
-            squaredSum = sum - pow(num,2);
-            
-            sum -= num;
-        }
-        else if (oparator == '+')
-        {
-            cin >> num;
-            squaredSum = sum + pow(num,2);
-            
             sum += num;
-            
-        }
-        else if (oparator == ';')
-        {
-            cout << sum << endl;
             cin >> num;
-            sum = num;
         }
-        
-        
+        else if (op == '-')
+        {
+            sum += num;
+            cin >> num;
+            num = -num;
+        }
+        else if (op == '^')
+        {
+            sum += num;
+            num = pow(num,2);
+        }
+        else if (op == ';')
+        {
+            sum += num;
+            cout << sum << endl;
+            sum = 0;
+        }
     }
     
     return 0;
