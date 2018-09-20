@@ -16,7 +16,7 @@ using namespace std;
 int main ()
 {
     int num, sum = 0;
-    char oparator;
+    char oparator, previousOpirator = ' ';
     
     cin >> num;
    
@@ -24,7 +24,13 @@ int main ()
     {
         if (oparator == '^')
         {
-            sum = sum + pow(num,2);
+            num = pow(num,2);
+            if (previousOpirator == '+')
+                sum += num;
+            else if (previousOpirator == '-')
+                sum -= num;
+            else
+                sum = num;
         }
         else if (oparator == '-')
         {
@@ -41,6 +47,7 @@ int main ()
             cout << sum << endl;
             cin >> num;
             sum = num;
+            previousOpirator = oparator;
         }
         
         
