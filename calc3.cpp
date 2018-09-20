@@ -26,6 +26,8 @@ int main ()
         if (oparator == '^')
         {
             sum = squaredSum;
+            if (squaredSum == 0)
+                sum = pow(num,2);
         }
         else if (oparator == '-')
         {
