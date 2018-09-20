@@ -31,16 +31,17 @@ int main ()
         else if (oparator == '-')
         {
             cin >> num;
-            sum -= num;
+            squaredSum = sum - pow(num,2);
             
-            squaredSum -= pow(num,2);
+            sum -= num;
         }
         else if (oparator == '+')
         {
             cin >> num;
+            squaredSum = sum + pow(num,2);
+            
             sum += num;
             
-            squaredSum += pow(num,2);
         }
         else if (oparator == ';')
         {
