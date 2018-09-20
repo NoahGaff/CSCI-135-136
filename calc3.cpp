@@ -16,9 +16,8 @@ int main ()
     int num, sum = 0;
     char oparator;
     
-    cin >> sum;
    
-    while (cin >> oparator >> num)
+    while (cin >> num >> oparator)
     {
         if (oparator == '^')
         {
