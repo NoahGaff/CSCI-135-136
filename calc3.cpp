@@ -9,15 +9,18 @@
 //
 
 #include <iostream>
+#include <cmath>
 using namespace std;
+
 
 int main ()
 {
     int num, sum = 0;
     char oparator;
     
+    cin >> sum;
    
-    while (cin >> num >> oparator)
+    while (cin >> oparator)
     {
         if (oparator == '^')
         {
