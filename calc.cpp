@@ -13,28 +13,34 @@ using namespace std;
 
 int main ()
 {
-    int num;
+    int num, sum = 0;
     char oparator;
     
-    int sum = 0;
-    
     cin >> sum;
-    
-    while (cin >> oparator)
+   
+    while (cin >> oparator >> num)
     {
-        cin >> num;
-        if (oparator == '-')
+        if (oparator == '^')
         {
+            sum = sum + num^2;
+        }
+        else if (oparator == '-')
+        {
+            cin >> num;
             sum -= num;
         }
         else if (oparator == '+')
         {
+            cin >> num;
             sum += num;
         }
+        else if (oparator == ';')
+        {
+            cout << sum << endl;
+            cin >> num;
+            sum = num;
+        }
     }
-    
-    cout << sum;
-    
     
     return 0;
 }
