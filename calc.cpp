@@ -22,7 +22,7 @@ int main ()
     {
         if (oparator == '^')
         {
-            sum = sum2;
+            sum = sum^2;
         }
         else if (oparator == '-')
         {
