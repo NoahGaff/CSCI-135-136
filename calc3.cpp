@@ -15,8 +15,8 @@ using namespace std;
 
 int main ()
 {
-       int num, sum = 0;
-    char op;
+   int num, sum = 0;
+   char op;
     
     cin >> num;
     
@@ -35,8 +35,8 @@ int main ()
         }
         else if (op == '^')
         {
-            cin >> num;
             num = pow(num,2);
+            cin >> num;
         }
         else if (op == ';')
         {
@@ -45,8 +45,6 @@ int main ()
             sum = 0;
         }
     }
-        
-    
-    
+
     return 0;
 }
