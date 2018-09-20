@@ -36,11 +36,11 @@ int main ()
         }
         else if (oparator == ';')
         {
-            cout << sum << endl;
+            
             cin >> num;
             sum = num;
         }
-        
+        cout << sum << endl;
         
     }
     
