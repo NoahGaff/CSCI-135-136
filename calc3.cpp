@@ -15,8 +15,8 @@ using namespace std;
 
 int main ()
 {
-   int num, sum = 0;
-   char op;
+    int num, sum = 0;
+    char op;
     
     cin >> num;
     
@@ -36,13 +36,13 @@ int main ()
         else if (op == '^')
         {
             num = pow(num,2);
-            cin >> num;
         }
         else if (op == ';')
         {
             sum += num;
             cout << sum << endl;
             sum = 0;
+            cin >> num;
         }
     }
 
