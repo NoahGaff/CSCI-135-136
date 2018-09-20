@@ -24,7 +24,7 @@ int main ()
     {
         if (oparator == '^')
         {
-            sum = sum + num^2;
+            sum = sum + num^num;
         }
         else if (oparator == '-')
         {
