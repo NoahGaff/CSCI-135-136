@@ -13,7 +13,7 @@ using namespace std;
 
 int main ()
 {
-    int num, sum;
+    int num, sum = 0;
     char oparator;
     
     cin >> sum;
@@ -22,8 +22,7 @@ int main ()
     {
         if (oparator == '^')
         {
-            cin >> num;
-            sum = sum + num^2;
+            sum = sum^2;
         }
         else if (oparator == '-')
         {
@@ -41,6 +40,8 @@ int main ()
             cin >> num;
             sum = num;
         }
+        
+        
     }
     
     return 0;
