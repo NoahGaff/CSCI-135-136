@@ -15,8 +15,6 @@ int main ()
 {
     int num, sum = 0;
     char oparator;
-    
-    cin >> sum;
    
     while (cin >> oparator >> num)
     {
