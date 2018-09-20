@@ -16,13 +16,9 @@ int main ()
     int num, sum = 0;
     char oparator;
    
-    while (cin >> oparator >> num)
+    while (cin >> oparator)
     {
-        if (oparator == '^')
-        {
-            sum = sum + num^2;
-        }
-        else if (oparator == '-')
+        if (oparator == '-')
         {
             cin >> num;
             sum -= num;
