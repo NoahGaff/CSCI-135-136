@@ -15,11 +15,10 @@ using namespace std;
 
 int main ()
 {
-    int num, sum;
+    int num, sum = 0;
     char op;
     
     cin >> num;
-    sum = num;
     
     while (cin >> op)
     {
