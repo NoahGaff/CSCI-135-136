@@ -19,7 +19,6 @@ int main ()
     char op;
     
     cin >> num;
-    sum = num;
     
     while (cin >> op)
     {
@@ -46,6 +45,9 @@ int main ()
             sum = 0;
         }
     }
+        
+    
     
     return 0;
 }
+
