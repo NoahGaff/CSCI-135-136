@@ -40,9 +40,11 @@ int main ()
             cin >> num;
             sum = num;
         }
-        cout << sum << endl;
+        
         
     }
+    
+    cout << sum << endl;
     
     return 0;
 }
