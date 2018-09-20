@@ -23,7 +23,7 @@ int main ()
         if (oparator == '^')
         {
             cin >> num;
-            sum = sum ^ num;
+            sum = sum + num^2;
         }
         else if (oparator == '-')
         {
