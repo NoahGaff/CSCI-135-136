@@ -24,9 +24,10 @@ int main ()
     {
         if (oparator == '^')
         {
-            sum = pow(num,2);
+            num = pow(num,2);
         }
-        else if (oparator == '-')
+        
+        if (oparator == '-')
         {
             cin >> num;
             sum -= num;
