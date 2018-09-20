@@ -18,10 +18,11 @@ int main ()
     
     cin >> sum;
    
-    while (cin >> oparator >> num)
+    while (cin >> oparator)
     {
         if (oparator == '^')
         {
+            cin >> num;
             sum = sum + num^2;
         }
         else if (oparator == '-')
@@ -36,15 +37,13 @@ int main ()
         }
         else if (oparator == ';')
         {
-            
+            cout << sum << endl;
             cin >> num;
             sum = num;
         }
         
         
     }
-    
-    cout << sum << endl;
     
     return 0;
 }
