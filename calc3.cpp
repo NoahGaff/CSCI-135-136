@@ -35,7 +35,10 @@ int main ()
         }
         else if (op == '^')
         {
-            num = pow(num,2);
+            if (num < 0)
+                num = -pow(num,2);
+            else
+                num = pow(num,2);
         }
         else if (op == ';')
         {
@@ -45,6 +48,6 @@ int main ()
             cin >> num;
         }
     }
-
+    
     return 0;
 }
