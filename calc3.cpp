@@ -24,7 +24,7 @@ int main ()
     {
         if (oparator == '^')
         {
-            sum = sum + pow(num,2);
+            num = pow(num,2);
         }
         else if (oparator == '-')
         {
