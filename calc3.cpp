@@ -18,7 +18,7 @@ int main ()
     
     cin >> sum;
    
-    while (cin >> oparator)
+    while (cin >> oparator >> num)
     {
         if (oparator == '^')
         {
