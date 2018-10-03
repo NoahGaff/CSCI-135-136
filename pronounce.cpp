@@ -1,12 +1,13 @@
 /*
-Author: Noah Gaffney
-Course: CSCI-135
-Instructor: their name
-Assignment: Project 2: Part I
+ Author: Noah Gaffney
+ Course: CSCI-135
+ Instructor: their name
+ Assignment: Project 2: Part I
+ 
+ Gives the prununciation of
+ input words
+ */
 
-Gives the prununciation of 
-input words 
-*/
 
 #include <iostream>
 #include <string>
@@ -37,7 +38,6 @@ int main()
     }
     string inputWord, compareWord, w;
     
-    cout << "Not found" << endl;
     cin >> inputWord;
     
     while(input >> compareWord)
