@@ -40,6 +40,8 @@ int main()
     
     cin >> inputWord;
     
+    for(int i = 0; i < inputWord.size(); i++) { inputWord.at(i) = toupper(inputWord.at(i)); }
+    
     while(input >> compareWord)
     {
         if(compareWord == inputWord){
