@@ -37,7 +37,7 @@ int main()
     }
     string inputWord, compareWord, w;
     
-    cout << "What is the word you want to look up?" << endl;
+    cout << "Not found" << endl;
     cin >> inputWord;
     
     while(input >> compareWord)
