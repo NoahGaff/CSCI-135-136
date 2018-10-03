@@ -51,7 +51,15 @@ int main()
     string beforeSpace;
     splitOnSpace(compareWord + inputWord, beforeSpace, afterSpace);
     splitOnSpace(compareWord + inputWord, beforeSpace, afterSpace);
-    cout << "Pronounciation: " << afterSpace << endl;
+    
+    if (afterSpace == "")
+    {
+        cout << "Not found"
+    }
+    else
+    {
+        cout << "Pronounciation: " << afterSpace << endl;
+    }
     
     
     return 0;
