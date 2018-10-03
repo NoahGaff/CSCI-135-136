@@ -1,12 +1,12 @@
-//
-//  valid.cpp
-//  136
-//  9/6/18
-//  Created by Noah Gaffney on
-//  Copyright © 2018 Noah Gaffney. All rights reserved.
-//  it's over 9000
-// I need more comments?
-//
+/*
+Author: Noah Gaffney
+Course: CSCI-135
+Instructor: their name
+Assignment: Project 2: Part I
+
+Gives the prununciation of 
+input words 
+*/
 
 #include <iostream>
 #include <string>
