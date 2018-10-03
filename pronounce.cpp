@@ -54,7 +54,7 @@ int main()
     
     if (afterSpace == "")
     {
-        cout << "Not found"
+        cout << "Not found";
     }
     else
     {
