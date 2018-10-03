@@ -31,7 +31,7 @@ void splitOnSpace(string s, string & before, string & after) {
 int main()
 {
     ifstream input;
-    input.open("cmudict.0.7a.txt");
+    input.open("cmudict.0.7a");
     if(input.fail()){
         cout << "File did not open";
     }
