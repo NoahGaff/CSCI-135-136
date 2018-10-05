@@ -6,11 +6,9 @@
  
  Gives the prununciation of
  input words
- okay
- another one
  */
 
-
+//stuff
 #include <iostream>
 using namespace std;
 int main()
@@ -53,4 +51,5 @@ int main()
     }
     
     return 0;
+ //things
 }
