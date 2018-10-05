@@ -7,6 +7,7 @@
  Gives the prununciation of
  input words
  okay
+ another one
  */
 
 
