@@ -6,6 +6,7 @@
  
  Gives the prununciation of
  input words
+ okay
  */
 
 
@@ -15,9 +16,8 @@ int main()
 {
     int height, width;
     
-    cout << "Input width: ";
+    
     cin >> width;
-    cout << "Input height: ";
     cin >> height;
     
     
