@@ -72,8 +72,8 @@ int main()
     
     int spaces = -1;
     
-    for (int i = 0; i < afterSpace.size(); ++i)
-        if (afterSpace[i] == ' ') ++spaces;
+    for (int i = 0; i < beforeSpace.size(); ++i)
+        if (beforeSpace[i] == ' ') ++spaces;
     
     if (afterSpace == "") { cout << "Not found"; }
     else { cout << "Pronounciation: " << spaces << endl; }
