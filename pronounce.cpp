@@ -38,7 +38,7 @@ string findWord(string inputWord)
     for (int i = 0; i < inputWord.size(); ++i)
         if (inputWord[i] == ' ') ++spaces;
     
-    if (spaces > 0) {spaces--}
+    if (spaces > 0) {spaces--;}
     
     input.open("cmudict.0.7a");
     if(input.fail()){
