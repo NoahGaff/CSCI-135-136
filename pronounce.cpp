@@ -31,9 +31,9 @@ void splitOnSpace(string s, string & before, string & after)
 string findWord(string inputWord)
 {
     ifstream input;
-    string compareWord;
+    string compareWord, addWord;
     
-    int spaces = -1;
+    int spaces = 0;
     
     for (int i = 0; i < inputWord.size(); ++i)
         if (inputWord[i] == ' ') ++spaces;
@@ -47,6 +47,11 @@ string findWord(string inputWord)
     
     while(input >> compareWord)
     {
+        for (int i = 0; i < spaces; i++)
+        {
+            input >> addWord;
+            compareWord = compareWord + addWord;
+        }
         if(compareWord == inputWord)
         {
             getline(input, inputWord);
@@ -70,13 +75,8 @@ int main()
     
     splitOnSpace(compareWord, beforeSpace, afterSpace);
     
-    int spaces = -1;
-    
-    for (int i = 0; i < beforeSpace.size(); ++i)
-        if (beforeSpace[i] == ' ') ++spaces;
-    
     if (afterSpace == "") { cout << "Not found"; }
-    else { cout << "Pronounciation: " << spaces << endl; }
+    else { cout << "Pronounciation: " << afterSpace << endl; }
     
     compareWord = findWord(afterSpace);
     
