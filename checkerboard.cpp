@@ -10,30 +10,46 @@
 
 
 #include <iostream>
-#include <cmath>
 using namespace std;
 int main()
 {
-    int  width;
-    cout << "input width: " << endl;
-    cin >> width;
+    int height, width;
     
-    //Making variable height and getting input from user
-    int height = 0;
-    cout << "input height: " << endl;
+    cout << "Input width: ";
+    cin >> width;
+    cout << "Input height: ";
     cin >> height;
-    int checkardBoard = 0;
+    
     
     for (int row = 0; row < height; row++)
     {
         for (int col = 0; col < width; col++)
         {
-            if (checkardBoard % 2 == 0)
-                cout << "*";
+            if (row % 2 == 0)
+            {
+                if (col % 2 == 0)
+                {
+                    cout << "*";
+                }
+                else
+                {
+                    cout << " ";
+                }
+            }
             else
-                cout << " ";
-            checkardBoard++;
+            {
+                if (col % 2 == 0)
+                {
+                    cout << " ";
+                }
+                else
+                {
+                    cout << "*";
+                }
+            }
         }
         cout << endl;
     }
+    
+    return 0;
 }
