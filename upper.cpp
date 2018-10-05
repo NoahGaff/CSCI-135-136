@@ -15,7 +15,6 @@ int main()
 {
     int sideLength;
     
-    cout << "Input side length: ";
     cin >> sideLength;
     
     for (int i = sideLength; i > 0; i--)
