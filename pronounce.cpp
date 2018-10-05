@@ -114,7 +114,7 @@ string findWord(string inputWord)
         }
     }
     
-    return compareWord;
+    return inputWord;
 }
 
 int main()
