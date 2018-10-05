@@ -18,11 +18,20 @@ int main()
     cout << "Input side length: ";
     cin >> sideLength;
     
-    for (int i = sideLength; i >= sideLength; i--)
+    for (int i = sideLength; i > 0; i--)
     {
-        for (int g = 0; g < i; g++)
+        int spaces = sideLength - i;
+        int stars = sideLength - spaces;
+        
+        while (spaces > 0)
+        {
+            cout << " ";
+            spaces --;
+        }
+        while (stars > 0)
         {
             cout << "*";
+            stars --;
         }
         cout << endl << endl;
     }
