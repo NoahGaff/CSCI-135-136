@@ -33,10 +33,10 @@ string findWord(string inputWord)
     ifstream input;
     string compareWord;
     
-    int iSpaces = 0;
+    int spaces = -1;
     
     for (int i = 0; i < inputWord.size(); ++i)
-        if (inputWord[i] == ' ') ++iSpaces;
+        if (inputWord[i] == ' ') ++spaces;
     
     input.open("cmudict.0.7a");
     if(input.fail()){
@@ -70,19 +70,19 @@ int main()
     
     splitOnSpace(compareWord, beforeSpace, afterSpace);
     
+    int spaces = -1;
+    
+    for (int i = 0; i < afterSpace.size(); ++i)
+        if (afterSpace[i] == ' ') ++spaces;
+    
     if (afterSpace == "") { cout << "Not found"; }
-    else { cout << "Pronounciation: " << afterSpace << endl; }
+    else { cout << "Pronounciation: " << spaces << endl; }
     
     compareWord = findWord(afterSpace);
     
-    int iSpaces = 0;
-    
-    for (int i = 0; i < afterSpace.size(); ++i)
-        if (afterSpace[i] == ' ') ++iSpaces;
-    
     splitOnSpace(compareWord, beforeSpace, afterSpace);
     
-    cout << "Identical: " << iSpaces << endl;
+    cout << "Identical: " << beforeSpace << endl;
     
 
     
