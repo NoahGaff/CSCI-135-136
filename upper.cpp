@@ -4,8 +4,9 @@
  Instructor: their name
  Assignment: Project 2: Part I
  
- Gives the prununciation of
- input words
+ I never
+ have enough 
+ comments
  */
 
 
