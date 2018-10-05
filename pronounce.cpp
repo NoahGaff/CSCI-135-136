@@ -47,6 +47,7 @@ string findWord(string inputWord)
     
     while(input >> compareWord)
     {
+        streampos oldpos = input.tellg();
         for (int i = 0; i < spaces; i++)
         {
             input >> addWord;
@@ -57,6 +58,7 @@ string findWord(string inputWord)
             getline(input, inputWord);
             break;
         }
+        input.seekg (oldpos);
     }
     
     return inputWord;
@@ -82,6 +84,7 @@ int main()
     
     splitOnSpace(compareWord, beforeSpace, afterSpace);
     
+    cout << endl;
     cout << "Identical: " << beforeSpace << endl;
     
 
