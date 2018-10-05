@@ -18,13 +18,13 @@ int main()
     cout << "Input side length: ";
     cin >> sideLength;
     
-    for (int i = -1; i < sideLength; i++)
+    for (int i = 0; i <= sideLength; i++)
     {
         for (int g = 0; g < i; g++)
         {
             cout << "*";
         }
-        cout << endl << endl; 
+        cout << endl << endl;
     }
     
     return 0;
