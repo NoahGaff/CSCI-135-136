@@ -86,6 +86,17 @@ int main()
  okay
  */
 
+/*
+ Author: Noah Gaffney
+ Course: CSCI-135
+ Instructor: their name
+ Assignment: Project 2: Part I
+ 
+ Gives the prununciation of
+ input words
+ okay
+ */
+
 
 #include <iostream>
 #include <fstream>
@@ -141,6 +152,13 @@ int main()
     
     if (afterSpace == "") { cout << "Not found"; }
     else { cout << "Pronounciation: " << afterSpace << endl; }
+    
+    compareWord = findWord(afterSpace);
+    
+    splitOnSpace(compareWord, beforeSpace, afterSpace);
+    
+    cout << "Identical: " << beforeSpace << endl;
+    
 
     
 }
