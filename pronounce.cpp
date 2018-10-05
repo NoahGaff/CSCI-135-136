@@ -125,7 +125,7 @@ int main()
     
     compareWord = findWord(inputWord);
     
-    splitOnSpace(compareWord + inputWord, beforeSpace, afterSpace);
+    splitOnSpace(compareWord, inputWord, beforeSpace, afterSpace);
     
     if (afterSpace == "") { cout << "Not found"; }
     else { cout << "Pronounciation: " << afterSpace << endl; }
