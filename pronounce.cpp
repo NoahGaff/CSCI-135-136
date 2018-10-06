@@ -65,11 +65,12 @@ string findWord(string inputWord)
     {
         if(size_t index = compareWord.find(inputWord))
         {
+            getline(input, inputWord);
             break;
         }
     }
     
-    return compareWord;
+    return inputWord;
 }
 
 
