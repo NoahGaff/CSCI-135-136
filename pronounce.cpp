@@ -12,6 +12,7 @@
 
 #include <iostream>
 #include <fstream>
+#include <cstring>
 using namespace std;
 
 void splitOnSpace(string s, string & before, string & after)
@@ -63,7 +64,8 @@ string findWord(string inputWord)
     
     while (getline(input, compareWord))
     {
-        if(compareWord.find(inputWord))
+        size_t index = compareWord.find(inputWord);
+        if(index = -1)
         {
             break;
         }
