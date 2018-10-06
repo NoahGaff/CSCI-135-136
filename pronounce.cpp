@@ -63,7 +63,7 @@ string findWord(string inputWord)
     
     while (getline(input, compareWord))
     {
-        if(size_t index = compareWord.find(inputWord))
+        if(compareWord.find(inputWord))
         {
             break;
         }
