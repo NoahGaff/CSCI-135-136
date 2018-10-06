@@ -38,8 +38,6 @@ string findWord(string inputWord)
     for (int i = 0; i < inputWord.size(); ++i)
         if (inputWord[i] == ' ') ++spaces;
     
-    if (spaces > 0) {spaces--;}
-    
     input.open("cmudict.0.7a");
     if(input.fail()){
         cout << "File did not open";
@@ -47,9 +45,9 @@ string findWord(string inputWord)
     
     for(int i = 0; i < inputWord.size(); i++) { inputWord.at(i) = toupper(inputWord.at(i)); }
     
+    /*
     while(input >> compareWord)
     {
-        streampos oldpos = input.tellg();
         for (int i = 0; i < spaces; i++)
         {
             input >> addWord;
@@ -60,7 +58,16 @@ string findWord(string inputWord)
             getline(input, inputWord);
             break;
         }
-        input.seekg (oldpos);
+    }
+     */
+    
+    while (getline(input, compareWord))
+    {
+        if(size_t index = compareWord.find(inputWord))
+        {
+            getline(input, inputWord);
+            break;
+        }
     }
     
     return inputWord;
