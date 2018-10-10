@@ -18,11 +18,11 @@ bool isPrime(int n)
    {
       return false; 
    }
-   else if
+   else
    {
       for (i = 2; i < n-1; i++) { return isDivisibleBy(n, i); }
    }
-   else {return true;} 
+   
 }
 
 bool isDivisibleBy(int n, int d)
