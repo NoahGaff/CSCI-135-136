@@ -36,7 +36,7 @@ int main()
   cout << "Enter first number: ";
   cin >> num1; 
   
-  cout << isPrime(int num1) << endl; 
+  cout << isPrime(num1) << endl; 
   
   return 0; 
 }
