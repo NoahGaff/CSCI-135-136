@@ -30,6 +30,7 @@ bool isPrime(int n)
       for (int i = 2; i < n-1; i++) { return isDivisibleBy(n, i); }
    }
    
+   return true; 
 }
 
 int main() 
