@@ -27,7 +27,7 @@ int main()
   cout << "Enter second number: ";
   cin >> num2; 
   
-  cout << bool isDivisibleBy << endl; 
+  cout << isDivisibleBy << endl; 
   
   return 0; 
 }
