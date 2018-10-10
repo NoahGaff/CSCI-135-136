@@ -13,7 +13,7 @@ using namespace std;
 
 bool isDivisibleBy(int n, int d)
 {
-   if (d == 0 || n % d != 0) {return flase;)
+   if (d == 0 || n % d != 0) {return false;)
    else (return true;)
 }
 
