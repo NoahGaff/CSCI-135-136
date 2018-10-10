@@ -21,16 +21,14 @@ bool isDivisibleBy(int n, int d)
 
 bool isPrime(int n)
 {
-   if (n <= 1)
-   {
-      return false; 
-   }
-   else
-   {
-      for (int i = 2; i <= n-1; i++) { return isDivisibleBy(n, i); }
+   if (n <= 1) { return false; }
+   
+   for (int i = 2; i <= n-1; i++) 
+   { 
+      if (return isDivisibleBy(n, i)) {return false;}
    }
    
-   return true; 
+   else {return true;}  
 }
 
 int main() 
