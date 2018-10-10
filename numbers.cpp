@@ -31,13 +31,21 @@ bool isPrime(int n)
    return true;
 }
 
+int nextPrime(int n) 
+{
+   while (isPrime(n) = false)
+   {
+      n++; 
+   }
+}
+
 int main() 
 {
   int num1; 
   cout << "Enter first number: ";
   cin >> num1; 
   
-  cout << isPrime(num1) << endl; 
+  cout << nextPrime(num1) << endl; 
   
   return 0; 
 }
