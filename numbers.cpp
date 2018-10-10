@@ -25,10 +25,10 @@ bool isPrime(int n)
    
    for (int i = 2; i <= n-1; i++) 
    { 
-      if (return isDivisibleBy(n, i)) {return false;}
+      if (isDivisibleBy(n, i)) {return false;}
    }
    
-   else {return true;}  
+   return true;
 }
 
 int main() 
