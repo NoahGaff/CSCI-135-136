@@ -12,6 +12,13 @@ describe what the program does.
 #include <iostream>
 using namespace std;
 
+bool isDivisibleBy(int n, int d)
+{
+   if (d == 0 || n % d != 0) {return false;}
+   else {return true;}
+}
+
+
 bool isPrime(int n)
 {
    if (n <= 1)
@@ -20,15 +27,9 @@ bool isPrime(int n)
    }
    else
    {
-      for (i = 2; i < n-1; i++) { return isDivisibleBy(n, i); }
+      for (int i = 2; i < n-1; i++) { return isDivisibleBy(n, i); }
    }
    
-}
-
-bool isDivisibleBy(int n, int d)
-{
-   if (d == 0 || n % d != 0) {return false;}
-   else {return true;}
 }
 
 int main() 
