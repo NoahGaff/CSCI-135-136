@@ -4,14 +4,15 @@ Course: CSCI-136
 Instructor: their name
 Assignment: Lab 5 A
 
-Here, briefly, at least in one or a few sentences
+Here, briefly, at least in one 
+or a few sentences
 describe what the program does.
 */
 
 #include <iostream>
 using namespace std;
 
-bool isPrime(int n);
+bool isPrime(int n)
 {
    if (n <= 1)
    {
