@@ -11,6 +11,19 @@ describe what the program does.
 #include <iostream>
 using namespace std;
 
+bool isPrime(int n);
+{
+   if (n <= 1)
+   {
+      return false; 
+   }
+   else if
+   {
+      for (i = 2; i < n-1; i++) { return isDivisibleBy(n, i); }
+   }
+   else {return true;} 
+}
+
 bool isDivisibleBy(int n, int d)
 {
    if (d == 0 || n % d != 0) {return false;}
@@ -23,11 +36,7 @@ int main()
   cout << "Enter first number: ";
   cin >> num1; 
   
-  int num2; 
-  cout << "Enter second number: ";
-  cin >> num2; 
-  
-  cout << isDivisibleBy << endl; 
+  cout << isPrime(int num1) << endl; 
   
   return 0; 
 }
