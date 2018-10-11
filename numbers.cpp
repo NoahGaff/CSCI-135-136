@@ -49,7 +49,9 @@ int countPrimes(int a, int b)
    
    return numOfPrimes;
 }
-
+//
+//
+//what is wrong with gradescope
 int main() 
 {
   int num1; 
