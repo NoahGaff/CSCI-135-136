@@ -58,14 +58,14 @@ bool isTwinPrime(int n)
     else {return false;}
     
 }
-
+//
 int nextTwinPrime(int n)
 {
     int next = n + 1;
     while (! isTwinPrime (next)) { next++; }
     return next;
 }
-
+//
 int largestTwinPrime(int a, int b)
 {
     int largestTwin = -1;
