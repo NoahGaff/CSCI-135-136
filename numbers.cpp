@@ -31,15 +31,11 @@ bool isPrime(int n)
    return true;
 }
 
-int nextPrime(int n) 
+int nextPrime(int n)
 {
-   int next = n; 
-   while (! isPrime(next))
-   {
-      next++; 
-   }
-   
-   return next;
+   int next = n + 1;
+   while (! isPrime (next)) { next++; }
+   return next; 
 }
 
 int main() 
