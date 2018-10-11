@@ -4,9 +4,12 @@
  Instructor: their name
  Assignment: Lab 5 A
  Here, briefly, at least in one
- or a few sentences
- describe what the
- program does.
+ or a few 
+ sentences
+ describe 
+ what the
+ program 
+ does.
  */
 
 #include <iostream>
