@@ -39,7 +39,7 @@ int nextPrime(int n)
       next++; 
    }
    
-   return n;
+   return next;
 }
 
 int main() 
