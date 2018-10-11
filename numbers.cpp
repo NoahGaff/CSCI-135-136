@@ -55,8 +55,8 @@ bool isTwinPrime(int n)
     int smaller = n - 2;
     
     if (isPrime(larger) || isPrime(smaller)) { return true; }
+    else {return false;}
     
-    return false;
 }
 
 int main()
