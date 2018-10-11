@@ -52,8 +52,12 @@ int main()
   int num1; 
   cout << "Enter first number: ";
   cin >> num1; 
+   
+  int num2; 
+  cout << "Enter Second number: ";
+  cin >> num2; 
   
-  cout << nextPrime(num1) << endl; 
+  cout << countPrimes(num1, num2) << endl; 
   
   return 0; 
 }
