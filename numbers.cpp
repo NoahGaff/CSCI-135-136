@@ -45,6 +45,8 @@ int countPrimes(int a, int b)
    {
       if (isPrime(i)) {numOfPrimes++;} 
    }
+   
+   return numOfPrimes;
 }
 
 int main() 
