@@ -33,7 +33,7 @@ bool isPrime(int n)
 
 int nextPrime(int n) 
 {
-   int next = n +1; 
+   int next = n; 
    while (! isPrime(next))
    {
       next++; 
