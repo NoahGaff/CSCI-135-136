@@ -61,13 +61,9 @@ bool isTwinPrime(int n)
 
 int nextTwinPrime(int n)
 {
-    int nextTwin = n + 3;
-    while (! isPrime (nextTwin))
-    {
-        nextTwin++;
-    }
-    
-    return nextTwin;
+    int next = n + 1;
+    while (! isTwinPrime (next)) { next++; }
+    return next;
 }
 
 int main()
