@@ -69,9 +69,13 @@ int nextTwinPrime(int n)
 int largestTwinPrime(int a, int b)
 {
     int largestTwin = -1;
-    for (int i = a; i <= b; i++)
+    for (int i = b; i >= a; i--)
     {
-        if (isTwinPrime(i)) {largestTwin = i;}
+        if (isTwinPrime(i))
+        {
+            largestTwin = i;
+            break;
+        }
     }
     
     return largestTwin;
@@ -83,11 +87,11 @@ int main()
     cout << "Enter first number: ";
     cin >> num1;
     
-    //int num2;
-    //cout << "Enter Second number: ";
-    //cin >> num2;
+    int num2;
+    cout << "Enter Second number: ";
+    cin >> num2;
     
-    cout << isTwinPrime(num1) << endl;
+    cout << largestTwinPrime(num1, num2) << endl;
     
     return 0;
 }
