@@ -71,7 +71,7 @@ int largestTwinPrime(int a, int b)
     int largestTwin = -1;
     for (int i = a; i <= b; i++)
     {
-        if (isPrime(i)) {largestTwin = i;}
+        if (isTwinPrime(i)) {largestTwin = i;}
     }
     
     return largestTwin;
