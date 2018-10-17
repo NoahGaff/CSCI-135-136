@@ -20,7 +20,7 @@ int main()
 {
     string prase;
     char letterAtPoint;
-    getline(cin, letterAtPoint);
+    getline(cin, prase);
     
     for (int i = 0; i < prase.size(); i++)
     {
