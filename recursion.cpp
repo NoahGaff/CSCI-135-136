@@ -14,6 +14,7 @@ describe what the program does.
 
 
 #include <iostream>
+#include<cmath>
 using namespace std;
 
 void printRange(int left, int right)
@@ -94,7 +95,7 @@ bool divisibleHelper(int *prices, int left, int right, int acountOne, int acount
 }
 
 */
-
+/*
 bool divisibleHelper(int *prices, int left, int right, int acountOne, int acountTwo)
 {
   if ((acountOne == 0) && (acountTwo == 0)) {return true;}
@@ -116,6 +117,69 @@ bool divisible(int *prices, int size)
   return divisibleHelper(prices, 0, size - 1, allowence, allowence);
 
 }
+*/
+/*
+
+bool divisibleHelper(int *prices, int left, int right, int allowence, int place, int loopNumber)
+{
+  if (loopNumber == pow(right +1, 2)) {return false;}
+  else if (sumArrayInRange(prices, 0, place) == sumArrayInRange(prices, place, right)) {return true;}
+  else
+  {
+    if (place == right)
+    {
+      return divisibleHelper(prices, left, right, allowence, 0, loopNumber);
+    }
+    return (prices, left, right, allowence, place + 1, loopNumber + 1);
+  }
+}
+
+bool divisible(int *prices, int size)
+{
+  int allowence;
+  int sum = sumArray(prices, size);
+  if (!(sum % 2 == 0)) { cout << sum; return false; }
+  else { allowence = sum / 2; }
+
+  return divisibleHelper(prices, 0, size - 1, allowence, 1, 0);
+}
+*/
+
+bool checkSubset (int arr[], int n, int sum)
+{
+  // Base Cases
+  if (sum == 0) { return true; }
+  if (n == 0 && sum != 0) {return false;}
+
+  // If last element is greater than sum, then
+  // ignore it
+  if (arr[n-1] > sum) {return checkSubset (arr, n-1, sum);}
+
+  /* else, check if sum can be obtained by any of
+  the following
+  (a) including the last element
+  (b) excluding the last element
+  */
+  return checkSubset (arr, n-1, sum) ||
+  checkSubset (arr, n-1, sum-arr[n-1]);
+}
+
+// Returns true if arr[] can be partitioned in two
+// subsets of equal sum, otherwise false
+bool divisible (int arr[], int n)
+{
+  // Calculate sum of the elements in array,
+  // i.e., getting the value which is expected to be achieved, as explained 86 is the number
+  int sum = sumArray(arr, n);
+  
+  // If sum is odd, there cannot be two subsets
+  // with equal sum
+  if (sum%2 != 0) {return false;}
+
+  // Find if there is subset with sum equal to half of total sum
+  return checkSubset (arr, n, sum/2);
+}
+
 
 
 int main ()
