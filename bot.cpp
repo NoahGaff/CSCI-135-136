@@ -105,22 +105,22 @@ void findFences(Dwarf & dwarf, ostream &log)
     }
 
 
-    if (dwarf.look(x, y+2) && dwarf.look(x, y+1)== EMPTY)
+    if (dwarf.look(x, y+2) == EMPTY && dwarf.look(x, y+1)== EMPTY)
     {
         log << "Walk to fence at " << x << " " << y+2 << " " << endl;
         dwarf.start_walk(x, y+2);
     }
-    else if (dwarf.look(x, y-2) && dwarf.look(x, y-1) == EMPTY)
+    else if (dwarf.look(x, y-2) == EMPTY && dwarf.look(x, y-1) == EMPTY)
     {
         log << "Walk to fence at " << x << " " << y-2 << " " << endl;
         dwarf.start_walk(x, y-2);
     }
-    else if (dwarf.look(x-2, y) && dwarf.look(x-1, y) == EMPTY)
+    else if (dwarf.look(x-2, y) == EMPTY && dwarf.look(x-1, y) == EMPTY)
     {
         log << "Walk to fence at " << x-2 << " " << y << " " << endl;
         dwarf.start_walk(x-2, y);
     }
-    else if (dwarf.look(x+2, y) && dwarf.look(x+1, y) == EMPTY)
+    else if (dwarf.look(x+2, y) == EMPTY && dwarf.look(x+1, y) == EMPTY)
     {
         log << "Walk to fence at " << x+2 << " " << y << " " << endl;
         dwarf.start_walk(x+2, y);
@@ -262,21 +262,30 @@ void onAction(Dwarf &dwarf, int day, int hours, int minutes, ostream &log)
 
     if (building)
     {
-      if ((r >= (ROWS) * 0.25 && r <= (ROWS) * 0.75) && (c >= (COLS) * 0.25 && c <= (COLS) * 0.75) && (!isFence(dwarf)))
+      if (r == ROWS / 2 && c == COLS/2 && (!isFence(dwarf)))
       {
-        dwarf.start_build(NORTH);
+        if(isNextToATree(dwarf)) { choppy(dwarf,log); }
+        else { dwarf.start_build(NORTH); }
       }
       else if (isFence(dwarf))
       {
-        if (dwarf.lumber() <= 10) {building = false;}
+        if (dwarf.lumber() < 10) {building = false;}
         else if(isNextToATree(dwarf)) { choppy(dwarf,log); }
         else if (isNextToAFence(dwarf)) { placeFence(dwarf, log); }
         else { findFences(dwarf, log); }
       }
-      else { dwarf.start_walk(ROWS / 2, COLS / 2); }
+      else if ((dwarf.look(ROWS/ 2, COLS / 2) == EMPTY ) ||
+               (dwarf.look(ROWS/ 2, COLS / 2) == APPLE_TREE )||
+               (dwarf.look(ROWS/ 2, COLS / 2) == PINE_TREE ))
+
+      {
+        if(isNextToATree(dwarf)) { choppy(dwarf,log); }
+        else if (dwarf.name() == 0) {dwarf.start_walk(ROWS / 2, COLS / 2);}
+      }
+
 
     }
-    else if (dwarf.lumber() >= 300)
+    else if (dwarf.lumber() >= 350)
     {
       building = true;
     }
