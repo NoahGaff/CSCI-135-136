@@ -212,25 +212,25 @@ void placeFence(Dwarf & dwarf, ostream &log)
 
 
   // Look if there is a tree NORTH from the dwarf
-    if (dwarf.look(r+2, c) == FENCE)
+    if (dwarf.look(r+2, c) == FENCE && dwarf.look(r+1, c) == EMPTY )
     {
       log << "Found Fence -- building next " << endl;
       dwarf.start_build(SOUTH);
     }
       // Look if there is a tree SOUTH from the dwarf
-    else if (dwarf.look(r-2, c) == FENCE)
+    else if (dwarf.look(r-2, c) == FENCE && dwarf.look(r-1, c) == EMPTY )
     {
       log << "Found Fence -- building next " << endl;
       dwarf.start_build(NORTH);
     }
       // Look if there is a tree WEST from the dwarf
-    else if (dwarf.look(r, c-2) == FENCE)
+    else if (dwarf.look(r, c-2) == FENCE && dwarf.look(r, c - 1) == EMPTY )
     {
       log << "Found Fence -- building next " << endl;
       dwarf.start_build(WEST);
     }
       // Look if there is a tree EAST from the dwarf
-    else if (dwarf.look(r, c+2) == FENCE)
+    else if (dwarf.look(r, c+2) == FENCE &&  dwarf.look(r, c + 1) == EMPTY )
     {
       log << "Found Fence -- building next " << endl;
       dwarf.start_build(EAST);
@@ -262,7 +262,7 @@ void onAction(Dwarf &dwarf, int day, int hours, int minutes, ostream &log)
 
     if (building)
     {
-      if ((r <= (ROWS) * 0.25 && r >= (ROWS) * 0.75) && (c <= (COLS) * 0.25 && c >= (COLS) * 0.75) && (!isFence(dwarf)))
+      if ((r >= (ROWS) * 0.25 && r <= (ROWS) * 0.75) && (c >= (COLS) * 0.25 && c <= (COLS) * 0.75) && (!isFence(dwarf)))
       {
         dwarf.start_build(NORTH);
       }
