@@ -415,26 +415,25 @@ void onAction(Dwarf &dwarf, int day, int hours, int minutes, ostream &log)
       }
     }
 
-/*
-    if (oneAndTwoDone(dwarf) && ((hours > 19) || (hours < 6)))
+    if (oneAndTwoDone(dwarf) && (hours > 6 && hours < 19))
     {
       if (dwarf.name() == 2)
       {
         if (isNextToAnyTree(dwarf)) { cutAll(dwarf, log); }
-        else if (dwarf.look(4, 6) != FENCE && r != 6 && c != 5) {dwarf.start_walk(6, 5);}
-        else if ((dwarf.look(r, c-1) != FENCE) && c == 5 && r < 14 && r > 4) {dwarf.start_build(WEST);}
-        else if ((dwarf.look(r, c-1) == FENCE) && r < 13) {dwarf.start_walk(r + 1, c);}
+        else if (dwarf.look(4, 6) == FENCE && r != 6 && c != 5) {dwarf.start_walk(6, 5);}
+        else if ((dwarf.look(r, c-1) == FENCE) && c == 5 && r < 14 && r > 4) {dwarf.start_chop(WEST);}
+        else if ((dwarf.look(r, c-1) != FENCE) && r < 13) {dwarf.start_walk(r + 1, c);}
       }
 
       if (dwarf.name() == 3)
       {
         if (isNextToAnyTree(dwarf)) { cutAll(dwarf, log); }
         else if (dwarf.look(11, 6) != FENCE && r != 6 && c != 10) {dwarf.start_walk(6, 10);}
-        else if ((dwarf.look(r, c+1) != FENCE) && c == 10 && r < 14 && r > 4) {dwarf.start_build(EAST);}
+        else if ((dwarf.look(r, c+1) != FENCE) && c == 10 && r < 14 && r > 4) {dwarf.start_chop(EAST);}
         else if ((dwarf.look(r, c+1) == FENCE) && r < 13) {dwarf.start_walk(r + 1, c);}
       }
     }
-*/
+
   if (day == 1)
   {
     if (isNextToATree(dwarf)) { cutTree(dwarf, log); }
